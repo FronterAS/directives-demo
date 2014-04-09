@@ -4,6 +4,14 @@ app.controller('myController', function($scope) {
     $scope.name = 'Gavin';
 });
 
+
+app.directive('myCntInput', function () {
+    return {
+        restrict: 'E',
+        template: '<input type="text" ng-model="name">'
+    };
+});
+
 app.directive('gavin', function () {
     return {
         restrict: 'E',
