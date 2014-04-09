@@ -14,6 +14,8 @@ app.directive('gavin', function () {
 app.directive('myInput', function () {
     return {
         restrict: 'E',
-        template: '<input type="text" ng-model="name">'
+        scope: true,
+        template: '<div>{{name}}</div>' +
+            '<input type="text" ng-model="name">'
     };
 });
